@@ -5,45 +5,54 @@ import java.util.HashMap;
 
 public class DataLoader {
 
-    public ArrayList<HashMap> getData() {
+    public class Person {
+
+        public String id;
+        public String name;
+        public String color;
+        public String gender;
+        public String state;
+        public String field;
+    }
+
+    public ArrayList<Person> getData() {
 
         ArrayList people = new ArrayList();
 
-        HashMap<String,String> peterValues = new HashMap();
-        peterValues.put("id","1");
-        peterValues.put("name","Peter");
-        peterValues.put("color","Blue");
-        peterValues.put("gender","Male");
-        peterValues.put("state","NY");
-        peterValues.put("field","Advertising");
-        people.add(peterValues);
+        Person peter = new Person();
+        peter.id = "1";
+        peter.name = "Peter";
+        peter.color = "Blue";
+        peter.gender = "Male";
+        peter.state = "NY";
+        peter.field = "Advertising";
+        people.add(peter);
 
-        HashMap<String,String> steveValues = new HashMap();
-        steveValues.put("id","2");
-        steveValues.put("name","Steve");
-        steveValues.put("color","Red");
-        steveValues.put("gender","Male");
-        steveValues.put("state","NY");
-        steveValues.put("field","Medicine");
-        people.add(steveValues);
+        Person steve = new Person();
+        steve.id = "2";
+        steve.name = "Steve";
+        steve.color = "Red";
+        steve.gender = "Male";
+        steve.state = "NY";
+        steve.field = "Medicine";
+        people.add(steve);
 
-        HashMap<String,String> janeValues = new HashMap();
-        janeValues.put("id","3");
-        janeValues.put("name","Jane");
-        janeValues.put("color","Blue");
-        janeValues.put("gender","Female");
-        janeValues.put("state","NJ");
-        janeValues.put("field","Advertising");
-        people.add(janeValues);
+        Person jane = new Person();
+        jane.id = "3";
+        jane.name = "Jane";
+        jane.color = "Blue";
+        jane.gender = "Female";
+        jane.state = "NJ";
+        jane.field = "Advertising";
+        people.add(jane);
 
-        HashMap<String,String> annValues = new HashMap();
-        annValues.put("id","4");
-        annValues.put("name","Ann");
-        annValues.put("color","Purple");
-        annValues.put("gender","Female");
-        annValues.put("state","NC");
-        annValues.put("field","Psychology");
-        people.add(annValues);
+        Person ann = new Person();
+        ann.name = "Ann";
+        ann.color = "Purple";
+        ann.gender = "Female";
+        ann.state = "NC";
+        ann.field = "Psychology";
+        people.add(ann);
 
         return people;
     }
